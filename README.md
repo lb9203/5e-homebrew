@@ -1,0 +1,1 @@
+ Run `make setup` before use to enable pre-commit hooks that automatically update dateLastModified on commit.
