@@ -14,7 +14,7 @@
             }
         ],
         "dateAdded": 1656471921,
-        "dateLastModified": 1656543786
+        "dateLastModified": 1656543856
     },
     "monster": [
         {
@@ -304,8 +304,6 @@
                     ]
                 }
             ],
-            "dragonCastingColor": "blue",
-            "dragonAge": "adult",
             "traitTags": [
                 "Legendary Resistances"
             ],
