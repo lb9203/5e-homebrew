@@ -179,6 +179,7 @@
         },
         {
             "name": "Tiril, the Nomad",
+            "isNpc": true,
             "group": [
                 "Chromatic Dragon"
             ],
