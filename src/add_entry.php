@@ -30,11 +30,7 @@ try {
 
     file_put_contents($filename, $json);
 
-    ob_start();
-
     require 'generate_homebrew.php';
-
-    ob_end_clean();
 
     exit(200);
 } catch (Throwable $throwable) {

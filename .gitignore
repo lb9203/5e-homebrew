@@ -1,4 +1,3 @@
 /.idea/
-
 /vendor/
-/homebrew_schema/
+/src/git_remote.php

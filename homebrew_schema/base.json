@@ -1,0 +1,18 @@
+{
+  "siteVersion": "1.160.1",
+  "_meta": {
+	"sources": [
+	  {
+		"json": "TheLitterbox",
+		"abbreviation": "TLB",
+		"full": "The Litterbox",
+		"url": "",
+		"authors": [
+		  "Xeez"
+		],
+		"convertedBy": []
+	  }
+	],
+	"dateAdded": 1656471921
+  }
+}

@@ -14,5 +14,7 @@
             "email": "leon.blejc@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "czproject/git-php": "^4.0"
+    }
 }

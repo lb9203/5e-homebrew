@@ -1,0 +1,135 @@
+{
+	"name": "Nora Arakelian",
+	"source": "TheLitterbox",
+	"size": [
+		"M"
+	],
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"Dwarf"
+		]
+	},
+	"alignment": [
+		"N",
+		"G"
+	],
+	"ac": [
+		{
+			"ac": 14,
+			"from": [
+				"{@item studded leather armor|phb|studded leather}"
+			]
+		}
+	],
+	"hp": {
+		"formula": "15d8 + 45",
+		"average": 112
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 18,
+	"dex": 15,
+	"con": 16,
+	"int": 12,
+	"wis": 12,
+	"cha": 15,
+	"save": {
+		"str": "+8",
+		"con": "+7",
+		"dex": "+6"
+	},
+	"skill": {
+		"athletics": "+12",
+		"intimidation": "+6",
+		"survival": "+5",
+		"perception": "+5"
+	},
+	"passive": 15,
+	"languages": [
+		"Common",
+		"Dwarvish"
+	],
+	"trait": [
+		{
+			"name": "Brave",
+			"entries": [
+				"Nora has advantage on saving throws against being {@condition frightened}."
+			]
+		},
+		{
+			"name": "Dwarven Resilience",
+			"entries": [
+				"You has advantage on saving throws against poison, and has resistance against poison damage."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Parry",
+			"entries": [
+				"Nora adds 3 to her AC against one melee attack that would hit her. To do so, she must see the attacker and be wielding a melee weapon."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack",
+		"Parry"
+	],
+	"languageTags": [
+		"C",
+		"D"
+	],
+	"damageTags": [
+		"B",
+		"P"
+	],
+	"hasFluff": true,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"senseTags": [
+		"D"
+	],
+	"isNpc": true,
+	"isNamedCreature": true,
+	"tokenUrl": "https://i.imgur.com/pXWTYS8.png",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://i.imgur.com/vREnYn3.png"
+				}
+			}
+		]
+	},
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Nora makes three melee attacks or two ranged attacks."
+			]
+		},
+		{
+			"name": "Maul",
+			"entries": [
+				"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Javelin",
+			"entries": [
+				"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage in melee, or 7 ({@damage 1d6 + 4}) piercing damage at range."
+			]
+		}
+	],
+	"miscTags": [
+		"MW",
+		"RW",
+		"THW"
+	],
+	"cr": "9"
+}

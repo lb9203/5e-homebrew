@@ -1,5 +1,8 @@
 <?php
 
+require_once '../vendor/autoload.php';
+use CzProject\GitPhp\Git;
+
 const HOMEBREW_DIR  = '../homebrew_schema';
 const BASE_FILE     = 'base.json';
 const HOMEBREW_FILE = 'homebrew.json';
@@ -53,7 +56,14 @@ foreach (PROCESS_TYPES as $type) {
 
 echo "Updating dateLastModified\n";
 
-$json['_meta']['dateLastModified'] = time();
+$json['_meta']['dateLastModified'] = $time = time();
 
 file_put_contents(sprintf('%s/%s', HOMEBREW_DIR, HOMEBREW_FILE), json_encode($json, JSON_PRETTY_PRINT));
 
+echo "Updating git repository\n";
+
+$git = new Git();
+$repo = $git->open('..');
+$repo->addAllChanges();
+$repo->commit(sprintf('Automated updated on %s.', $time));
+$repo->push(null, ['--repo' => require_once 'git_remote.php']);
