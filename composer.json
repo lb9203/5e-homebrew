@@ -1,0 +1,18 @@
+{
+    "name": "leon/5e-homebrew",
+    "description": "Simple 5e.tools homebrew tool.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Leon\\5eHomebrew\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leon Blejc",
+            "email": "leon.blejc@gmail.com"
+        }
+    ],
+    "require": {}
+}

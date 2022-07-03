@@ -1,1 +1,4 @@
 /.idea/
+
+/vendor/
+/homebrew_schema/
